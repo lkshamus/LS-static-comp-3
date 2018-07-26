@@ -7,18 +7,19 @@
   background-color: #1f2f49;
   display: grid;
   grid-template-columns: minmax(200px, 1fr));
-  grid-template-rows: 3(repeat, 1fr); 
+  grid-template-rows: 200px, 1fr, 1fr;
+  /*3(repeat, 1fr); */
 }
   
 .name-nav, .main-nav, 
 .admin-nav, .categories-nav {
-  width: 225px;
-  border-bottom: 1px solid #131e30;
+ /* width: 225px;
+*/  border-bottom: 1px solid #131e30;
 }
 
 .name-nav {
   box-sizing: border-box;
-  height: 205px;
+/*  height: 200px;*/
   grid-row: 1 / span 1;
 }
 
@@ -31,6 +32,8 @@
 }
 
 .title-name {
+  margin: .5em;
+  font-family: 'Maven Pro', sans-serif;
   color: #ffffff;
   text-align: center;
 }
@@ -41,20 +44,47 @@
 }
 
 .main-nav, .admin-nav {
-  height: 200px;
+  height: 250px;
 }
 
 .main-nav {
+  padding: 0;
   grid-row: 2 / span 1;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+  color: #ffffff;
+}
+
+li {
+  margin: 1em;
+  font-size: .8em;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.home-icon, .jobs-icon,
+.resumes-icon, .tasks-icon, .calendar-icon {
+  display: inline-block;
+  margin-bottom: .2em;
+  padding-left: .5em;
+}
 .main-ul {
+  grid-column: 1 /span 1;
   grid-row: 2 /span 1;
 }
 
-.home-btn {
-  width: 1em;
+.home-btn, .briefcase, .resume, .resume-btn, .clipboard-btn, .calendar-btn {
+  position: relative;
+  top: 3px;
+  width: 1.5em;
 }
+
+/*.home-btn {
+  position: relative;
+  top: 2px;
+}*/
 
 .admin-nav {
   grid-row: 3 / span 1;

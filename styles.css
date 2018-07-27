@@ -127,11 +127,12 @@ header {
 }
 
 .name-nav {
+  height: 210px;
   box-sizing: border-box;
 }
 
 .laura-photo {
-  margin: 4em auto 0 ;
+  margin: 2.5em auto 0 ;
   display: block;
   width: 100px;
   height: auto;
@@ -205,4 +206,86 @@ li {
   width: 1.5em;
 }
 
+.job-title {
+  display: grid;
+/*  width: 100%;*/
+  grid-template-rows: 25px 75px 75px;
+}
 
+.customer-service, .location-info{
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.customer-service {
+  color: #7b7d7d;
+  margin-left: 2em;
+}
+
+.location-info{
+  color: #b3b3b7;
+  margin: 4.5em 0 0 4em;
+}
+
+.location-dot {
+  position: relative;
+  top: 3px;
+}
+
+.txt-highlight {
+  margin-left: 1.5em;
+  color: #00bfff;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+}
+
+button, .open-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .9em;
+  width: 6em;
+  height: 2.6em;
+  border-radius: 500px;
+  grid-row: 2 / span 1;
+}
+
+button {
+  outline: none;
+  margin: 1.8em 1.2em 0 0;
+}
+
+.green-dot {
+  height: 1em;
+  margin-right: .3em;
+}
+
+.bookmark {
+  height: 1.3em;
+}
+
+.bookmark-btn {
+  width: 2.8em;
+  border-radius: 50%
+}
+
+.main-pge {
+  margin: 4em 4em 0 2.5em;
+  color: black;
+  list-style: none;
+  display: flex;
+  grid-row: 3 / span 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-li {
+  font-size: 1em;
+  margin-left: 2em;
+}

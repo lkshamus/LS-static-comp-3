@@ -10,13 +10,14 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 1fr 800px 1fr 1fr 1fr;
-  height: 100px;
+  grid-template-columns: 1fr 870px 1fr 1fr 1fr;
+  height: 80px;
   width: 100%;
 }
 
 .main-content {
   grid-column: 2 / span 2;
+  height: 255px;
 }
 
 .hamburger-menu, .search-bar,
@@ -43,7 +44,7 @@ header {
 .search {
   color: #cfcfd1;
   padding-left: 1em;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .add-friend:hover, .calendar:hover, .squares:hover {
@@ -68,7 +69,7 @@ header {
 .add-friend, .calendar, .squares {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 2em;
+  background-size: 1.5em;
   background-color: #ffffff;
 }
 
@@ -96,12 +97,12 @@ header {
 }
 
 .hamburger {
-  height: 1.7em;
+  height: 1.4em;
   margin-right: 1em;
 }
 
 .eye-glass {
-  height: 2em;
+  height: 1.5em;
 }
 
 .location-dot {
@@ -176,7 +177,7 @@ ul {
   color: #ffffff;
 }
 
-li {
+.side-nav {
   margin: 1.2em;
   margin-left: 1.6em;
   font-size: .9em;
@@ -238,11 +239,12 @@ li {
 }
 
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
+    margin-right: 5em;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1
 }
 
 button, .open-btn {
@@ -258,6 +260,7 @@ button, .open-btn {
 
 button {
   outline: none;
+ /* padding-right: 1em;*/
   margin: 1.8em 1.2em 0 0;
 }
 
@@ -276,7 +279,7 @@ button {
 }
 
 .main-pge {
-  margin: 4em 4em 0 2.5em;
+  margin: 6em 24em 0 2.5em;
   color: black;
   list-style: none;
   display: flex;
@@ -286,6 +289,138 @@ button {
 }
 
 .main-li {
+  color: #b3b3b7;
   font-size: 1em;
-  margin-left: 2em;
+  padding-left: 2em;
+}
+
+.options{
+  padding-bottom: 1.3em;
+  border-bottom: 3.3px solid transparent;
+}
+.options:hover {
+  color: #7b7d7d;
+  padding-bottom: 1.3em;
+  border-bottom: 3.3px solid #00bfff;
+}
+
+.graph-area {
+  display: grid;
+  margin-top: 2.5em;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-rows: 250px 1fr;
+  background-color: #eaf0f4;
+  height: 350px;
+  border-top: 1px solid #e5e5e8;
+}
+
+
+.flex-wrapper {
+  padding: 4em 2em 2em 2em ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1 
+  flex-flow: row nowrap;
+  width: 600px;
+}
+
+.single-chart {
+  width: 33em;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: .8em;
+/*  max-width: 50%;*/
+  max-height: 200px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke:   #D7E4EC;
+  stroke-width: 2.5;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.aqua .circle {
+  stroke: #01ABB0;
+}
+
+.circular-chart.blue .circle {
+  stroke: #00bfff;
+}
+
+.circular-chart.purple .circle {
+  stroke: #7e2b91;
+}
+
+.percentage {
+  fill: #7b7d7d;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.bar-graph {
+  display: flex;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.graph {
+  padding: 2em 0 0 0;
+  height: 250px;
+}
+
+.btn-graph {
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  border-bottom: 1px solid black;
+/*  #e5e5e8;*/
+  padding: 0 2em 0 0;
+  margin: 0 4em 0 4em;
+  height: 100px;
+}
+
+.btn-graph1 {
+  background-color: #eaf0f4
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+/*  #e5e5e8;*/
+  padding: 0 2em 0 0;
+  margin: 0 1em 0 4em;
+  height: 100px;
+
+}
+.graph-btn, .graph-btn2 {
+    color: #7b7d7d;
+    width: 160px;
+    margin: 1em 2em 10em 3em;
+}
+
+.graph-btn2 {
+  width: 220px;
 }

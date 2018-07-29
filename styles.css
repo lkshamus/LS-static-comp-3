@@ -1,6 +1,7 @@
 * {
   margin: 0;
   font-family: 'Maven Pro', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -435,7 +436,7 @@ button {
 
 .social-media {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 600px 1fr 1fr ;
   height: 900px;
   background-color: #eaf0f4;
 }
@@ -480,40 +481,110 @@ button {
   font-size: 1em;
 }
 
-.position-section {
+.position-section, .location-section, 
+.employment-type-section, .experience-section, 
+.status-section, .description-section, .hiring-section,
+.approved-section {
   border-bottom: 1px solid #e5e5e8;
   color: #737C95;
   margin: 0 2.5em 0 2.5em;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.position-section {
   grid-row: 2 / span 1;
   grid-column: 1 / span 2;
 }
 
-.position, .location-txt {
+.location-section {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 2;
+}
+
+.employment-type-section {
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 2;
+}
+
+.experience-section {
+  grid-row: 5 / span 1;
+  grid-column: 1 / span 2;
+}
+
+.status-section {
+  grid-row: 6 / span 1;
+  grid-column: 1 / span 2;
+}
+
+.description-section {
+  grid-row: 7 / span 2;
+  grid-column: 1 / span 2;
+}
+
+.hiring-section {
+  grid-row: 9 / span 1;
+  grid-column: 1 / span 2;
+}
+
+.approved-section {
+  grid-row: 10 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.position, .location-txt,
+.employment-txt, .experince-txt, 
+.status-txt, .description-txt, 
+.hiring-txt, .approved-txt {
   font-size: .8em;
 }
 
 .position-title {
-  margin-left: 3em;
+  margin-left: 3.8em;
 }
 
 .location-area {
-  margin-left: 4.8em;
+  margin-left: 5.6em;
 }
 
-.position-title, .location-area {
+.position-title, .location-area, 
+.employment-area, .experience-area, 
+.status-area, .description-area, 
+.hiring-area, .approved-area {
   font-size: 1.1em;
 }
 
-.location-section {
-  border-bottom: 1px solid #e5e5e8;
-  color: #737C95;
-  margin: 0 2.5em 0 2.5em;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  grid-row: 3 / span 1;
-  grid-column: 1 / span 2;
+.employment-area {
+  margin-left: 2.5em;
+}
+
+.experience-area {
+  margin-left: 4.7em;
+}
+
+.status-area {
+  margin-left: 6.4em;
+}
+
+.description-txt {
+  margin-bottom: 4em;
+}
+
+.description-area {
+  padding-left: 4em;
+}
+
+.ls-photo {
+  border-radius: 50%;
+  height: 3em;
+  margin-left: 4.3em;
+}
+
+.hiring-area {
+  margin-left: 1em;
+}
+
+.approved-area {
+  margin-left: 2em;
 }

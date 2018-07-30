@@ -149,10 +149,10 @@ header {
   text-align: center;
 }
 
-.down-arrow-nav{
+.down-arrow-nav {
   position: relative;
-  width: .6em;
-  padding-left: .3em;
+  width: 1em;
+  padding-left: .4em;
 }
 
 .main-nav, .admin-nav {
@@ -183,6 +183,13 @@ ul {
   margin-left: 1.6em;
   font-size: .9em;
   font-family: 'Maven Pro', sans-serif;
+}
+
+.nav-hoover:hover {
+  background-color: #303948;
+  padding: .8em;
+  margin: -.1em;
+  border-left: 5px solid #00bfff;
 }
 
 .home-icon, .jobs-icon,
@@ -239,6 +246,12 @@ ul {
   color: #00bfff;
 }
 
+.txt-highlight:hover {
+  font-weight: bold;
+  font-size: 1.1em;
+ /* color: black;*/
+}
+
 .btn {
     margin-right: 5em;
     display: flex;
@@ -292,6 +305,7 @@ button {
 }
 
 .main-li {
+  font-weight: bold;
   color: #b3b3b7;
   font-size: 1em;
   padding-left: 2em;
@@ -327,6 +341,10 @@ button {
   grid-row: 1 / span 1 
   flex-flow: row nowrap;
   width: 600px;
+}
+
+.txt {
+  font-size: 2.5px;
 }
 
 .single-chart {
@@ -420,6 +438,7 @@ button {
 
 }
 .graph-btn, .graph-btn2 {
+  font-weight: bold;
     outline: none;
     height: 40px;
     font-size: .8em;
@@ -475,6 +494,11 @@ button {
   position: relative;
   bottom: 13px;
   background-color: #7E8AA1;
+}
+
+.job-edit:hover {
+  width: 5.7em;
+  height: 2.4em;
 }
 
 .description-of-job {
@@ -540,6 +564,7 @@ button {
 .employment-txt, .experince-txt, 
 .status-txt, .description-txt, 
 .hiring-txt, .approved-txt {
+  font-weight: bold;
   font-size: .8em;
 }
 
@@ -637,6 +662,10 @@ button {
 
 .linkedin {
   background-color: #3881B8;
+}
+
+.fb:hover, .twitter:hover, .linkedin:hover{
+  height: 55px;
 }
 
 .copy-btn {

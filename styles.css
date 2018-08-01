@@ -1202,7 +1202,9 @@ right: 90px;
   margin-right: -50px;
   height: 200px;
 }
-
+.btn-graph1{
+  display: none;
+}
 .flex-wrapper {
   padding: 0;
   margin: 0 4em 0 6em;
@@ -1283,6 +1285,8 @@ right: 90px;
   
 .flex-wrapper {
     margin: 0;
+    width: 500px;
+    background-color: #eaf0f4;
   }
 
 .social-media{
@@ -1317,6 +1321,16 @@ right: 90px;
 }
 }
 
+@media screen and (max-width: 480px){
+
+.flex-wrapper {
+    width: 600px;
+    background-color: #eaf0f4;
+    padding: 0 3em 4em 10em;
+    margin: 0 -100px 0;
+}
+}
+
 @media screen and (max-width: 465px){
   header {
   grid-template-columns: 1fr 200px 1fr 1fr 1fr;
@@ -1338,7 +1352,7 @@ right: 90px;
   }
 
 .flex-wrapper{
-    width: 400px;
+    width: 570px;
   }
 
 .graph-btn2 {
@@ -1387,7 +1401,7 @@ font-size: .8em;
 }
 
 .flex-wrapper{
-  width: 350px;
+  width: 500px;
 }
 
 .txt-highlight {
@@ -1416,7 +1430,7 @@ font-size: .8em;
   }
 
 .flex-wrapper{
-    width: 320px;
+    width: 485px;
   }
 
 .job-row{

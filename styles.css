@@ -10,6 +10,7 @@ body {
   grid-template-columns: 215px 1fr 1fr;
 }
 
+/*TOP OF PAGE*/
 header {
   display: grid;
   grid-template-columns: 1fr 1350px 1fr 1fr 1fr;
@@ -106,6 +107,8 @@ header {
 .location-dot {
   height: 1em;
 }
+
+/*RIGHT SIDE OF PAGE*/
 .nav {
   background-color: #374051;
   display: grid;
@@ -212,6 +215,8 @@ ul {
   width: 1.5em;
 }
 
+
+/*MIDDLE OF PAGE*/
 .job-title {
   display: grid;
   grid-template-rows: 25px 75px 75px;
@@ -369,6 +374,8 @@ button {
   stroke-width: 2.5;
 }
 
+
+/*GRAPHS*/
 @keyframes progress {
   0% {
     stroke-dasharray: 0 100;
@@ -426,7 +433,7 @@ button {
 }
 
 .btn-graph1 {
-  background-color: #eaf0f4
+  background-color: #eaf0f4;
   border-bottom: 1px solid #7b7d7d;
   display: flex;
   grid-column: 1 / span 1;
@@ -459,6 +466,8 @@ button {
   height: 1200px;
 }
 
+
+/*JOB CARD SECTION*/
 .job-area {
   background-color: white;
   border-radius: 1%;
@@ -613,6 +622,8 @@ button {
   margin-left: 2em;
 }
 
+
+/*RIGHT SIDE OF PAGE*/
 .social-media-area {
   display: grid;
   grid-column: 3 / span 1;
@@ -733,6 +744,9 @@ grid-row: 3 / span 1;
 .btn-wdgt {
   margin: 2em 0 0 0;
 }
+
+
+/*MEDIA QUERIES*/
 
 @media screen and (min-width: 1660px) and (max-width:1680px){
 
@@ -1408,7 +1422,7 @@ font-size: .8em;
 .job-row{
     grid-column: 1 / span 1;
   }
-  
+
 .position-section, .location-section, 
 .employment-type-section, .experience-section,
 .status-section, .description-section,

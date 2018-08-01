@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
-   <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
-    <title>Laura Shamus Static Comp 3</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laura Shamus Static Comp 3</title>
   </head>
   <body>
-    <aside class="nav">
+    <aside aria-label="Navigator" class="nav">
       <div class="name-nav">
-        <img class="laura-photo" src="images/laura-photo.jpg">
+        <img aria-label="Client-photo "class="laura-photo" src="images/laura-photo.jpg">
         <p class="title-name">Laura Shamus<img class="down-arrow-nav" src="images/back.svg"></p>
       </div>
-      <div class="main-nav">
+      <div aria-label="Navigator-options" class="main-nav">
         <ul class="main-ul">
           <li class="side-nav"><span class="main">Main</span></li>
           <li class="side-nav nav-hoover">
@@ -39,7 +39,7 @@
           </li>
         </ul>
       </div>
-      <div class="admin-nav">
+      <div aria-label="Navigator-options" class="admin-nav">
         <ul class="admin-ul">
           <li class="side-nav" ><span class="main">Admin</span></li>
           <li class="side-nav nav-hoover">
@@ -64,7 +64,7 @@
           </li>
         </ul>
       </div>
-      <div class="categories-nav">
+      <div aria-label="Navigator-options" class="categories-nav">
         <ul class="admin-ul">
           <li class="side-nav"><span class="main">Categories</span></li>
           <li class="side-nav nav-hoover">
@@ -88,174 +88,169 @@
     </aside>
     <section class="main-content">
       <header>
-        <div class="hamburger-menu">
+        <div aria-label="hamburger-menu" class="hamburger-menu">
           <img class="blue-arrow" src="images/bluearrow.svg">
           <img class="hamburger" src="images/hamburger.svg">
         </div>
-        <div class="search-bar">
+        <div aria-label="search" class="search-bar">
           <img class="eye-glass" src="images/eyeglass.svg">
           <p class="search">Search for a job, task, or resume</p>
         </div>
-        <div class="add-friend"></div>
-        <div class="calendar"></div>
-        <div class="squares"></div>
+        <div aria-label="Add-friend" class="add-friend"></div>
+        <div aria-label="calendar" class="calendar"></div>
+        <div aria-label="more-options" class="squares"></div>
       </header>
       <article class="job-title">
-        <h1 class="customer-service">Customer Service Representative</h1>
+        <h1 aria-label="job-title" class="customer-service">Customer Service Representative</h1>
         <p class="location-info">
           <img class="location-dot" src="images/locationpoint.svg">
           San Francisco, CA <span class="txt-highlight"> Preview this post </span>
         </p>
         <div class="btn">
-          <button class="open-btn">
+          <button aria-label="open" class="open-btn">
             <p class="open-btn">
               <img class="green-dot" src="images/circle.svg">OPEN
             </p>
           </button>
-          <button class="bookmark-btn">
+          <button aria-label="bookmark" class="bookmark-btn">
             <img class="bookmark" src="images/bookmark-ribbon.svg">
           </button>
-           <button class="bookmark-btn">
+           <button aria-label="edit" class="bookmark-btn">
             <img class="bookmark" src="images/edit.svg">
           </button>
-           <button class="bookmark-btn">
+           <button aria-label="trash" class="bookmark-btn">
             <img class="bookmark" src="images/delete-photo.svg">
           </button>
         </div>
         <ul class="main-pge">
-          <li class="main-li">
+          <li aria-label="summary" class="main-li">
             <p class="options">SUMMARY<p>
           </li>
-          <li class="main-li">
-            <p class="options">APPLICANTS
+          <li aria-label="applicants" class="main-li">
+            <p class="options spacebtwn">APPLICANTS
             </p></li>
-          <li class="main-li">
-            <p class="options">JOBBOARD
+          <li aria-label="jobboard" class="main-li">
+            <p class="options spacebtwn">JOBBOARD
             </p></li>
-          <li class="main-li">
-          <p class="options">INTERVIEWS
+          <li aria-label="interviews" class="main-li">
+            <p class="options spacebtwn">INTERVIEWS
           </p></li>
-          <li class="main-li">
-          <p class="options">ACTIVITY
-          </p></li>
-          <li class="main-li">
-          <p class="options">BROADCAST
-          </p></li>
-          <li class="main-li">
-          <p class="options">NOTIFICATIONS
+          <li aria-label="activity" class="main-li">
+            <p class="options spacebtwn">ACTIVITY
+            </p></li>
+          <li aria-label="broadcast" class="main-li">
+            <p class="options spacebtwn">BROADCAST
+            </p></li>
+          <li aria-label="Notifications" class="main-li">
+            <p class="options spacebtwn">NOTIFICATIONS
           </p></li>
         </ul>
       </article>
-      <article class="graph-area">
-
-
-
+      <article aria-label="graph" class="graph-area">
         <div class="flex-wrapper">
-  <div class="single-chart">
-    <svg viewbox="0 0 36 36" class="circular-chart aqua">
-      <path class="circle-bg"
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-      />
-      <path class="circle"
-        stroke-dasharray="30, 100"
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-      />
-      <text x="18" y="19.35" class="percentage">3,154</text>
-      <text x="11" y="25" class="txt"> APPLICANTS </text>
-    </svg>
-  </div>
-  
-  <div class="single-chart">
-    <svg viewbox="0 0 36 36" class="circular-chart blue">
-      <path class="circle-bg"
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-      />
-      <path class="circle"
-        stroke-dasharray="60, 100"
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-      />
-           <text x="18" y="19.35" class="percentage">1,546</text>
-      <text x="11" y="25" class="txt"> INTERVIEWS </text>    </svg>
-  </div>
-
-  <div class="single-chart">
-    <svg viewbox="0 0 36 36" class="circular-chart purple">
-      <path class="circle-bg"
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-      />
-          <path class="circle"
-              stroke-dasharray="90, 100"
+          <div aria-label="pie-graph" class="single-chart">
+          <svg viewbox="0 0 36 36" class="circular-chart aqua">
+            <path class="circle-bg"
               d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            <path class="circle"
+              stroke-dasharray="30, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
             />
-                <text x="18" y="19.35" class="percentage">912</text>
-                <text x="11" y="25" class="txt"> FORWARDS </text>
+              <text x="18" y="19.35" class="percentage">3,154</text>
+              <text x="11" y="25" class="txt"> APPLICANTS </text>
               </svg>
             </div>
-          </div>
-          <div class="btn-graph1">
-        <button class="graph-btn2">TOTALS - Out of 5,231 views</button>
+  
+        <div aria-label="pie-graph" class="single-chart">
+          <svg viewbox="0 0 36 36" class="circular-chart blue">
+            <path class="circle-bg"
+            d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path class="circle"
+            stroke-dasharray="60, 100"
+            d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+           <text x="18" y="19.35" class="percentage">1,546</text>
+          <text x="11" y="25" class="txt"> INTERVIEWS </text>    </svg>
       </div>
-      <section class="bar-graph">
-        <img class="graph" src="images/graph.png">
-      </section>
+      <div class="single-chart">
+        <svg viewbox="0 0 36 36" class="circular-chart purple">
+        <path class="circle-bg"
+        d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path class="circle"
+          stroke-dasharray="90, 100"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="18" y="19.35" class="percentage">912</text>
+            <text x="11" y="25" class="txt"> FORWARDS </text>
+          </svg>
+        </div>
+      </div>
+        <div class="btn-graph1">
+          <button aria-label="total" class="graph-btn2">TOTALS - Out of 5,231 views</button>
+      </div>
+    <section class="bar-graph">
+      <img class="graph" src="images/graph.png">
+    </section>
       <div class="btn-graph">
-        <button class="graph-btn">APPLICANTS/DAY</button>
+        <button aria-label="applicants-amount" class="graph-btn">APPLICANTS/DAY</button>
+        <img class="dwn-arrw" src="images/uparrow.svg">
       </div>
       </article>
-      <section class="job">
-<!--         <article class="job-description"></article> -->
         <article class="social-media">
           <section class="job-area"> 
             <div class="job-row">
               <h2 class="description-of-job">JOB DESCRIPTION</h2> 
               <button class="job-edit"> <img class="edit-the-job" src="images/pencil-edit-button.svg"> Edit </button>
             </div>
-            <div class="position-section">
+            <div aria-label="position" class="position-section">
               <p class="position">POSITION TITLE</p>
               <h2 class="position-title"> Customer Service Representative </h2>
             </div>
-             <div class="location-section">
+             <div aria-label="location" class="location-section">
               <p class="location-txt">LOCATION</p>
               <h2 class="location-area"> San Francisco, CA </h2>
                  </div>
-             <div class="employment-type-section">
+             <div aria-label="employment"  class="employment-type-section">
               <p class="employment-txt">EMPLOYMENT TYPE</p>
               <h2 class="employment-area"> Full Time
               </h2>
             </div>
-             <div class="experience-section">
+             <div aria-label="experience" class="experience-section">
               <p class="experince-txt">EXPERIENCE</p>
               <h2 class="experience-area"> Mid-level
               </h2>
             </div>
-            <div class="status-section">
+            <div aria-label="status" class="status-section">
               <p class="status-txt">STATUS</p>
               <h2 class="status-area"> Open
               </h2>
             </div>
-            <div class="description-section">
+            <div aria-label="description" class="description-section">
               <p class="description-txt">DESCRIPTION</p>
               <h2 class="description-area"> The Customer Service Representative is responisble for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times whlie doing a backhand spring and eating a ham sandwhich.
               </h2>
             </div>
-               <div class="hiring-section">
+               <div aria-label="hiring" class="hiring-section">
               <p class="hiring-txt">HIRING LEAD</p>
                 <span class="pic"> <img class="ls-photo" src="images/laura-photo.jpg"></span> <h2 class="hiring-area">Laura Shamus
               </h2>
             </div>
-            <div class="approved-section">
+            <div aria-label="salary" class="approved-section">
               <p class="approved-txt">APPROVED SALARY</p>
               <h2 class="approved-area"> $58,000
               </h2>
@@ -263,13 +258,13 @@
           </section>
           <section class="social-media-area">
             <div class="social-media-buttons">
-              <button class="fb">
+              <button aria-label="facebook" class="fb">
                 <img class="facebook" src="images/facebook-white.svg"> <span class="fb-txt">Post to Facebook</span>
               </button>
-              <button class="twitter">
+              <button aria-label="twitter" class="twitter">
                 <img class="twitter-pic" src="images/twitter-white.svg"> <span class="twitter-txt">Tweet this Job</span>
               </button>
-               <button class="linkedin">
+               <button aria-label="pie-graph" class="linkedin">
                 <img class="in-pic" src="images/linkedin-white.svg"><span class="link-txt"> Post to Linkedin </span>
               </button>
             </div>
@@ -281,22 +276,24 @@
                 "images/world.svg"></span> Link to this Job </h2>
                 <p class="link-to-job-txt"> Lorem Ipsum dolor sit amet, consecteture, adipis cing elit. Integer mollis neque esegte vestibepend. </p>
                 <input type="text" class="link-to-leave" placeholder="http://loremipsum.dol/sitamet...""> <button class="copy-btn">Copy</button>
+                <hr />
               </div>
             </div>
                <div class="use-widget">
                 <div class="widget">
                 <img class="wallet" src="">
-                <h2 class="link-to-job"> <span class="globe"> 
+                <h2 class="link-to-job btn-wdgt"> <span class="globe"> 
                 <img class="wallet-picture" src=
                 "images/wallet-filled-money-tool.svg"></span> Use the Button Widget </h2>
                 <p class="link-to-job-txt"> The widget embeds the buttons for sharing the job for submitting a resume on your website. </p>
                 <input type="text" class="link-to-leave" placeholder="<script type'text/javascript's..."> <button class="copy-btn">Copy</button>
+                  <hr />
               </div>
             </div>
             <div class="upload-resume">
-                <div class="widget">
+                <div class="widget wallet-wid">
                 <img class="wallet" src="">
-                <h2 class="link-to-job"> <span class="globe"> 
+                <h2 class="link-to-job upload-res"> <span class="globe"> 
                 <img class="wallet-picture" src=
                 "images/wallet-filled-money-tool.svg"></span> Upload Resume by Email </h2>
                 <p class="link-to-job-txt"> You can automatically upload multiple resumes to this job by emailing the address below. </p>
